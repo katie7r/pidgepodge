@@ -1,0 +1,45 @@
+#pigeon.container {
+  width: 960px;
+  margin: 100px auto;
+
+  .pigeon {
+    background-color: grey;
+  }
+
+  .top, .middle, .bottom { @include clearfix; }
+
+  .top {
+    #pigeon-head {
+      height: 180px;
+      width: 90px;
+
+      float: right;
+      border-radius: 25px 25px 0 0;
+    }
+  }
+
+  .middle {
+    ul.pigeon-feathers, #pigeon-body { height: 480px; }
+
+    ul.pigeon-feathers {
+      width: 90px;
+
+      li.pigeon-feather {
+        margin: auto 0;
+        border-radius: 10px 0 0 10px;
+        first-of-type { margin-top: 0; }
+        last-of-type { margin-bottom: 0; }
+      }
+    }
+
+    #pigeon-body {
+      width: 870px;
+    }
+  }
+
+  .bottom {
+    #pigeon-footer {
+
+    }
+  }
+}
